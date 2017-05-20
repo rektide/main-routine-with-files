@@ -1,0 +1,21 @@
+{
+	"name": "main-routine-with-files",
+	"version": "1.0.0",
+	"description": "Quickstart 'main' routine for processing variadic glob arguments.",
+	"main": "main-routine-with-files.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://archive.voodoowarez.com/main-routine-with-files"
+	},
+	"keywords": ["main", "executable"],
+	"author": "rektide de la faye",
+	"license": "X11",
+	"dependencies": {
+		"es6-promisify": "^5.0.0",
+		"glob": "^7.1.2",
+		"p-map": "^1.1.1"
+	}
+}
