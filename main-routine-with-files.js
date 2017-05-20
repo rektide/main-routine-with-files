@@ -27,7 +27,7 @@ async function main( opts){
 		opts.files= await glob( opts.globs)
 	}
 	if( opts.fileCheck){
-		opts.fileCheck( ops.files)
+		opts.fileCheck( opts.files)
 	}
 
 	var output
