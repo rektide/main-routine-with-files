@@ -1,6 +1,6 @@
 {
 	"name": "main-routine-with-files",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Quickstart 'main' routine for processing variadic glob arguments.",
 	"main": "main-routine-with-files.js",
 	"scripts": {
