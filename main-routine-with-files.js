@@ -2,18 +2,24 @@
 
 var
   glob= require( "./glob"),
+  minimist= require( "minimist"),
   pmap= require( "p-map")
 
 async function main( opts){
 	opts= opts|| {}
 	if( !opts){
-		opts= {
-			args: process.args,
-			env: process.env
-		}
+		opts= {}
+	}
+	if( opts.args=== undefined){
+		opts.args= process.argv.slice( 2)
+	}
+	if( opts.env=== undefined){
+		opts.env= process.env
 	}
 	if( opts.args&& opts.minimist=== undefined){
 		if( opts.args._){
+			opts.minimist= opts.args
+		}else{
 			opts.minimist= minimist( opts.args)
 		}
 	}
