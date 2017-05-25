@@ -9,7 +9,7 @@ async function glob( globs){
 	if( !globs){
 		return
 	}
-	if( globs.prototype=== String){
+	if( typeof( globs)=== "string"){
 		globs=[ globs]
 	}
 	var files= await pmap( globs, g=> Glob( g))

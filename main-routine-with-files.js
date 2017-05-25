@@ -26,7 +26,7 @@ async function main( opts){
 	if( !opts.globs&& opts.minimist){
 		opts.globs= opts.minimist._
 	}
-	if( !opts.globs&& opts.defaultGlob){
+	if( (!opts.globs|| opts.globs.length=== 0) && opts.defaultGlob){
 		opts.globs= opts.defaultGlob
 	}
 	if( !opts.files&& opts.globs){
